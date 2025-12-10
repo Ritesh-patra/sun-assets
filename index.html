@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sun Assets - Luxury Mountain Properties</title>
+    <title>Sun Assets - Luxury Properties</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -1072,7 +1072,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button id="navCta" class="hidden sm:block px-4 py-2 bg-orange-600 text-white rounded-lg">
+            <button onclick="openModal()" id="navCta"
+                class="hidden sm:block px-4 py-2 bg-orange-600 text-white rounded-lg">
                 Enquire Now
             </button>
 
@@ -1108,7 +1109,7 @@
                 <div class="swiper-slide" style="background-image: url('images/sunset1.jpg')">
                     <div class="hero-content">
                         <h1>Luxury Within Reach</h1>
-                        <p>Discover the finest mountain properties with stunning views and modern amenities</p>
+                        <p>Discover the finest properties with stunning views and modern amenities</p>
                         <div class="hero-buttons">
                             <a href="#featured" class="btn btn-primary">Explore Properties</a>
                             <a href="#about" class="btn btn-secondary">Learn More</a>
@@ -1120,7 +1121,7 @@
                 <div class="swiper-slide" style="background-image: url('images/sunset2.jpg')">
                     <div class="hero-content">
                         <h1>Your Dream Home Awaits</h1>
-                        <p>Premium properties in the most prestigious mountain locations</p>
+                        <p>Premium properties in the most prestigious locations</p>
                         <div class="hero-buttons">
                             <a href="#featured" class="btn btn-primary">View All Properties</a>
                             <a href="#contact" class="btn btn-secondary">Schedule Tour</a>
@@ -1132,7 +1133,7 @@
                 <div class="swiper-slide" style="background-image: url('images/sunset3.jpg')">
                     <div class="hero-content">
                         <h1>Exceptional Living Experience</h1>
-                        <p>Curated selection of luxury mountain estates for discerning clients</p>
+                        <p>Curated selection of luxury estates for discerning clients</p>
                         <div class="hero-buttons">
                             <button class="btn btn-primary">Discover Now</button>
                             <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -1159,7 +1160,7 @@
                     class="text-4xl font-extrabold text-gray-900 border-b-4 border-blue-600 inline-block px-4 pb-1 mb-2">
                     About Sun Assets
                 </h2>
-                <p class="text-lg text-gray-600 font-medium">Leading luxury real estate company in mountain properties
+                <p class="text-lg text-gray-600 font-medium">Leading luxury real estate company in properties
                 </p>
             </div>
 
@@ -1186,26 +1187,28 @@
 
                 <div
                     class="about-content lg:col-span-7 p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-blue-600 flex flex-col justify-start">
-                    <h3 class="text-3xl font-extrabold text-blue-800 mb-2 tracking-wide">Est 2006</h3>
+                    <h3 class="text-3xl font-extrabold text-blue-800 mb-2 tracking-wide">Est 2021</h3>
                     <h4 class="text-xl font-bold mt-2 text-gray-800 border-b pb-3 border-gray-100">Our Story</h4>
 
                     <p class="mt-4 text-gray-700 leading-relaxed text-justify flex-grow">
                         Welcome to <strong class="text-blue-600 font-bold">Sun Assets</strong>, your premier destination
                         for comprehensive real estate solutions.
-                        Since our inception on <strong class="text-blue-800 font-bold">January 1st, 2006</strong>, we've
+                        Since our inception on <strong class="text-blue-800 font-bold">January 1st, 2021</strong>, we've
                         been revolutionizing the industry,
-                        guided by our founding partners: <strong class="text-green-600 font-bold">Kotni Madhu Kumar, V
-                            Sri Ram, G Ravi Kumar, and K Uttam</strong>.
+                        guided by our founding partners: <strong class="text-green-600 font-bold">Kotni Madhu Kumar (21
+                            years of Real Estate experience), V
+                            Sri Ram (15 years of Real Estate experience), G Ravi Kumar (5 years of Real Estate
+                            experience), and K Uttam (10 years of Real Estate experience)</strong>.
                         With their combined expertise and unwavering dedication, we've established ourselves as leaders
                         in the
-                        realm of construction and property development.
+                        realm of construction and property development with new updated projects.
                     </p>
 
                     <p class="mt-4 text-gray-700 leading-relaxed text-justify">
                         At <strong class="text-blue-600 font-bold">Sun Asset Systems</strong>, we offer a diverse range
                         of services tailored to meet your every need.
                         Whether you're in search of luxurious apartments, prime plots of land, leasing opportunities,
-                        individual bungalows or impeccable construction works — we have you covered.
+                        individual bungalows or impeccable construction works we operate.
                         Our commitment extends beyond mere transactions; we strive to build lasting relationships with
                         our clients,
                         ensuring satisfaction at every step of the journey.
@@ -1237,7 +1240,8 @@
                         class="icon-wrapper flex-shrink-0 mr-4 p-3 bg-yellow-200/80 rounded-full group-hover:bg-yellow-300 transition-colors duration-300">
                         <i class="ri-hand-coin-line text-yellow-700 text-2xl group-hover:text-yellow-800"></i>
                     </div>
-                    <span class="font-semibold text-lg text-yellow-800 group-hover:text-yellow-900">Leasing</span>
+                    <span class="font-semibold text-lg text-yellow-800 group-hover:text-yellow-900">Leasing commercial
+                        and Residential</span>
                 </li>
                 <li
                     class="about-card group flex items-center p-4 bg-gradient-to-r from-red-50 to-red-100 rounded-xl shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105">
@@ -1247,6 +1251,15 @@
                     </div>
                     <span class="font-semibold text-lg text-red-800 group-hover:text-red-900">Land Arrangement as
                         Required</span>
+                </li>
+                <li
+                    class="about-card group flex items-center p-4 bg-gradient-to-r from-sky-50 to-sky-100 rounded-xl shadow-md transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105">
+                    <div
+                        class="icon-wrapper flex-shrink-0 mr-4 p-3 bg-red-200/80 rounded-full group-hover:bg-red-300 transition-colors duration-300">
+                        <i class="ri-landscape-line text-red-700 text-2xl group-hover:text-red-800"></i>
+                    </div>
+                    <span class="font-semibold text-lg text-red-800 group-hover:text-red-900">All type investment
+                        advisers</span>
                 </li>
             </ul>
         </div>
@@ -1279,11 +1292,18 @@
                     </div>
 
                     <div class="mt-4">
-                        <h3 class="text-xl font-semibold text-gray-800">SUN CITY</h3>
+                        <h3 class="text-xl font-semibold text-gray-800">SUN LIVINGS</h3>
                         <div class="flex items-center text-gray-600 mt-1">
                             <i class="fas fa-map-marker-alt mr-2 text-orange-500"></i>
                             Nilanchal Nagar 7th Lane, Brahmapur
                         </div>
+                        <p class="justify-content">
+                            Our land and site development services integrate scientific Vastu principles with the
+                            expertise of skilled structural and architectural engineers. We specialize in creating
+                            thoughtfully planned, efficient, and sustainable layouts and structures that improve
+                            stability, functionality, and long-term value. In addition, we offer modern interior design
+                            solutions at reasonable prices, tailored to your specific requirements.
+                        </p>
                         <div class="text-lg font-bold text-orange-600 mt-2">₹ —</div>
 
                         <button
@@ -1307,8 +1327,15 @@
                         <h3 class="text-xl font-semibold text-gray-800">SUN DHANVANTRI</h3>
                         <div class="flex items-center text-gray-600 mt-1">
                             <i class="fas fa-map-marker-alt mr-2 text-orange-500"></i>
-                           Bimanagar, mbapua
+                            Bimanagar,adjscent Ambapua main road
                         </div>
+                        <p class="justify-content">
+                            Our land and site development services integrate scientific Vastu principles with the
+                            expertise of skilled structural and architectural engineers. We specialize in creating
+                            thoughtfully planned, efficient, and sustainable layouts and structures that improve
+                            stability, functionality, and long-term value. In addition, we offer modern interior design
+                            solutions at reasonable prices, tailored to your specific requirements.
+                        </p>
                         <div class="text-lg font-bold text-orange-600 mt-2">₹ —</div>
                         <button
                             class="mt-3 w-full bg-orange-600 text-white py-2 rounded-xl font-semibold hover:bg-orange-700 transition">
@@ -1333,13 +1360,13 @@
                 <div class="service-card scroll-animation">
                     <div class="service-icon"><i class="fas fa-home"></i></div>
                     <h3>Property Sales</h3>
-                    <p>Browse our exclusive collection of premium mountain properties with personalized assistance from
+                    <p>Browse our exclusive collection of premium properties with personalized assistance from
                         our expert agents.</p>
                 </div>
                 <div class="service-card scroll-animation">
                     <div class="service-icon"><i class="fas fa-search"></i></div>
                     <h3>Property Search</h3>
-                    <p>Advanced search tools and filters to help you find your perfect mountain home based on your
+                    <p>Advanced search tools and filters to help you find your perfect home based on your
                         specific requirements.</p>
                 </div>
                 <div class="service-card scroll-animation">
@@ -1351,7 +1378,7 @@
                 <div class="service-card scroll-animation">
                     <div class="service-icon"><i class="fas fa-key"></i></div>
                     <h3>Investment Advisory</h3>
-                    <p>Comprehensive investment advice for mountain property portfolios to maximize your returns and
+                    <p>Comprehensive investment advice for property portfolios to maximize your returns and
                         growth potential.</p>
                 </div>
                 <div class="service-card scroll-animation">
@@ -1364,7 +1391,16 @@
                     <div class="service-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Exclusive Partnerships</h3>
                     <p>Strategic partnerships with premium service providers to offer comprehensive solutions for luxury
-                        mountain living.</p>
+                        living.</p>
+                </div>
+                <div class="service-card scroll-animation">
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Land/Site development</h3>
+                    <p>
+                        Our land and site development services cover the complete process of planning, designing, and
+                        preparing infrastructure. We deliver reliable solutions using modern techniques and expert
+                        guidance to enhance the value and usability of your property.
+                    </p>
                 </div>
             </div>
         </div>
@@ -1377,19 +1413,19 @@
         <div class="container">
             <div class="section-title" style="color: var(--white);">
                 <h2 style="color: var(--white); margin-bottom: 0.5rem;">Why Choose Sun Assets</h2>
-                <p style="color: rgba(255,255,255,0.8);">The premier choice for luxury mountain properties</p>
+                <p style="color: rgba(255,255,255,0.8);">The premier choice for luxury properties</p>
             </div>
             <div class="why-choose-grid">
                 <div class="why-card scroll-animation">
                     <div class="why-card-icon"><i class="fas fa-award"></i></div>
                     <h3>Industry Leaders</h3>
-                    <p>15+ years of experience in luxury mountain real estate with a proven track record of excellence.
+                    <p>21+ years of experience in luxury real estate with a proven track record of excellence.
                     </p>
                 </div>
                 <div class="why-card scroll-animation">
                     <div class="why-card-icon"><i class="fas fa-users"></i></div>
                     <h3>Expert Team</h3>
-                    <p>Dedicated professionals who understand the unique needs of mountain property buyers and
+                    <p>Dedicated professionals who understand the unique needs of property buyers and
                         investors.</p>
                 </div>
                 <div class="why-card scroll-animation">
@@ -1400,12 +1436,89 @@
                 </div>
                 <div class="why-card scroll-animation">
                     <div class="why-card-icon"><i class="fas fa-headset"></i></div>
-                    <h3>24/7 Support</h3>
-                    <p>Round-the-clock customer support and concierge services for all your real estate needs.</p>
+                    <h3>Real Estate Support</h3>
+                    <p>We offer comprehensive assistance for all types of real estate solutions from land development to
+                        interior development and leasing requirements</p>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <!-- Partners Section -->
+    <!-- Partners Section -->
+    <section class="py-12 sm:py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our Trusted Partners
+                </h2>
+                <p class="mt-4 text-xl text-gray-600">
+                    Experienced real estate professionals working together to deliver the best property solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Partner 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="images/madhu1.jpg" alt="Kotni Madhu Kumar"
+                        class="w-full h-60 object-cover shadow-md rounded-t-xl">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Kotni Madhu Kumar</h3>
+                        <p class="text-gray-500 mb-2">21 years of real estate experience</p>
+                        <p class="text-gray-600">A highly trusted industry expert known for market knowledge and
+                            strategic guidance.</p>
+                    </div>
+                </div>
+
+                <!-- Partner 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="images/rama1.jpg" alt="V Sri Ram"
+                        class="w-full h-60 object-cover object-top shadow-md rounded-t-xl">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">V Sri Ram</h3>
+                        <p class="text-gray-500 mb-2">15 years of real estate experience</p>
+                        <p class="text-gray-600">Specializes in premium property deals and customer-centric real estate
+                            consultations.</p>
+                    </div>
+                </div>
+
+                <!-- Partner 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="images/rama.jpg" alt="GJ Ravi"
+                        class="w-full h-60 object-cover object-top shadow-md rounded-t-xl">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">GJ Ravi</h3>
+                        <p class="text-gray-500 mb-2">9 years of real estate experience</p>
+                        <p class="text-gray-600">Focused on modern real estate trends, client support, and efficient
+                            transaction handling.</p>
+                    </div>
+                </div>
+
+                <!-- Partner 4 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="images/uttam.jpg" alt="K Uttam"
+                        class="w-full h-60 object-cover object-top shadow-md rounded-t-xl">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">K Uttam</h3>
+                        <p class="text-gray-500 mb-2">15 years of real estate experience</p>
+                        <p class="text-gray-600">Known for strong negotiation skills and expertise in land and
+                            investment properties.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
 
     <!-- Testimonials -->
     <section class="testimonials">
@@ -1442,7 +1555,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"Finding my dream mountain home was made easy by the Sun Assets team.
+                    <p class="testimonial-text">"Finding my dream home was made easy by the Sun Assets team.
                         They understood my preferences and found the perfect property within weeks."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">PM</div>
@@ -1484,14 +1597,14 @@
             </div>
             <div class="contact-grid">
                 <div>
+
                     <div class="contact-info-item scroll-animation">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="contact-details">
                             <h3>Address</h3>
-                            <p>Dharma Nagar, 1st Line,
-                                Berhampur-2, Odisha</p>
+                            <p>Dharma Nagar, 1st Line,<br>Berhampur-2, Odisha</p>
                         </div>
                     </div>
 
@@ -1502,6 +1615,7 @@
                         <div class="contact-details">
                             <h3>Phone</h3>
                             <p>+91 98891 23456</p>
+                            <p>+91 91782 23344</p>
                         </div>
                     </div>
 
@@ -1514,7 +1628,42 @@
                             <p>contact@sunassets.com</p>
                         </div>
                     </div>
+
+                    <!-- Map Section -->
+                    <div class="contact-info-item scroll-animation">
+                        <div class="contact-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location Map</h3>
+
+                            <!-- Google Map Embed -->
+                            <div
+                                style="width: 100%; height: 250px; border-radius: 10px; overflow: hidden; margin-bottom: 15px;">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.3406026104703!2d84.78189251023788!3d19.31102104447811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d51aaf31c749d%3A0x231b3911f842de9d!2sSun%20Assets!5e0!3m2!1sen!2sin!4v1765371166801!5m2!1sen!2sin"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div style="display: flex; gap: 10px;">
+                                <a href="https://maps.app.goo.gl/V7KpdsZ6sXWwQzpj6" target="_blank"
+                                    class="btn-direction"
+                                    style="padding: 10px 15px; background:#ff6600; color:#fff; border-radius:6px; text-decoration:none;">
+                                    Get Direction
+                                </a>
+
+                                <a href="tel:+919889123456" class="btn-call"
+                                    style="padding: 10px 15px; background:#008000; color:#fff; border-radius:6px; text-decoration:none;">
+                                    Call Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
 
                 <form class="contact-form scroll-animation" id="contactForm">
                     <div class="form-group">
@@ -1544,7 +1693,7 @@
         <div class="container">
             <div class="newsletter-content">
                 <h2>Subscribe to Our Newsletter</h2>
-                <p>Stay updated with the latest luxury mountain properties and real estate trends</p>
+                <p>Stay updated with the latest luxury properties and real estate trends</p>
                 <form class="newsletter-form" id="newsletterForm">
                     <input type="email" placeholder="Enter your email address" required>
                     <button type="submit">Subscribe</button>
@@ -1559,7 +1708,7 @@
 
             <div class="footer-section">
                 <h4 class="text-4xl font-bold">Sun Assets</h4>
-                <p class="mb-12">Your trusted partner in luxury mountain real estate for over 15 years. Excellence,
+                <p class="mb-12">Your trusted partner in luxury real estate for over 15 years. Excellence,
                     integrity, and
                     service.</p>
                 <div class="social-icons flex items-center gap-4 text-2xl">
