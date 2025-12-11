@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUN LIVINGS - Premium Residential Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #FF6B35;
+            --primary-dark: #E55100;
+            --secondary: #004E89;
+            --accent: #1DD1A1;
+            --accent-dark: #10AC84;
+            --gold: #FFD700;
+            --light-bg: #FFF8F0;
+            --white: #ffffff;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFF0E6 100%);
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%);
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, #004E89 0%, #1E7BC8 100%);
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #1DD1A1 0%, #38D9A9 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold" style="color: var(--primary);">SUN LIVINGS</div>
+            <div class="hidden md:flex gap-8">
+                <a href="#specifications" class="text-gray-700 hover:text-orange-600 transition">Specifications</a>
+                <a href="#amenities" class="text-gray-700 hover:text-orange-600 transition">Amenities</a>
+                <a href="#flats" class="text-gray-700 hover:text-orange-600 transition">Flat Details</a>
+                <a href="#payment" class="text-gray-700 hover:text-orange-600 transition">Payment</a>
+            </div>
+            <button class="bg-gradient-primary text-white px-6 py-2 rounded-full hover:shadow-lg transition">
+                Enquire Now
+            </button>
+        </div>
+    </nav>
+
+    <!-- Added hero image section to attract customers -->
+    <section class="relative h-96 lg:h-screen overflow-hidden">
+        <img src="images/sun 26.jpg" alt="SUN LIVINGS Luxury Residential" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+
+    </section>
+
+    <!-- Added video section -->
+    <section class="py-16 px-4" style="background: linear-gradient(135deg, #FFE5D9 0%, #FFCBB4 100%);">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center" style="color: var(--primary);">Project Video Tour</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Take a virtual walkthrough of SUN LIVINGS</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="SUN LIVINGS Virtual Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Amenities Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specifications" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center" style="color: var(--primary);">Premium Specifications</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Every detail crafted with excellence</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Replaced emojis with SVG icons -->
+                <!-- Structure -->
+                <div class="p-6 rounded-xl" style="background: linear-gradient(135deg, #FFE5D9 0%, #FFCBB4 100%); border-left: 5px solid var(--primary);">
+                    <svg class="w-8 h-8 mb-3" style="color: var(--primary);" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 13h2v8H3v-8zm4-8h2v16H7V5zm4-2h2v18h-2V3zm4 4h2v14h-2V7zm4-2h2v16h-2V5z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--primary);">Structure</h3>
+                    <p class="text-gray-700">Earthquake-resistant RCC framed structure built to withstand extreme conditions</p>
+                </div>
+
+                <!-- Fittings -->
+                <div class="p-6 rounded-xl" style="background: linear-gradient(135deg, #D9EDFF 0%, #B4DCFF 100%); border-left: 5px solid var(--secondary);">
+                    <svg class="w-8 h-8 mb-3" style="color: var(--secondary);" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--secondary);">Premium Fittings</h3>
+                    <p class="text-gray-700">Premium sanitary fitting & CP fitting for durability and elegance</p>
+                </div>
+
+                <!-- Electrical -->
+                <div class="p-6 rounded-xl" style="background: linear-gradient(135deg, #E6FFE6 0%, #B4FFB4 100%); border-left: 5px solid var(--accent);">
+                    <svg class="w-8 h-8 mb-3" style="color: var(--accent-dark);" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 2h-2v3h2V2zm0 16h-2v3h2v-3zM3 13H0v-2h3v2zm18 0h3v-2h-3v2zM5.64 5.64L3.52 3.52 2.1 4.94l2.12 2.12 1.42-1.42zm12.72 12.72l2.12 2.12 1.42-1.42-2.12-2.12-1.42 1.42zM5.64 18.36l-1.42 1.42 2.12 2.12 1.42-1.42-2.12-2.12zm12.72-12.72l1.42-1.42-2.12-2.12-1.42 1.42 2.12 2.12zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--accent-dark);">Electrical Systems</h3>
+                    <p class="text-gray-700">Branded premium quality wires with concealed modular switchboards</p>
+                </div>
+
+                <!-- Doors -->
+                <div class="p-6 rounded-xl" style="background: linear-gradient(135deg, #FFE5D9 0%, #FFCBB4 100%); border-left: 5px solid var(--primary);">
+                    <svg class="w-8 h-8 mb-3" style="color: var(--primary);" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 1H5c-1.1 0-2 .9-2 2v20h18V3c0-1.1-.9-2-2-2zm0 20H5V3h14v18zm-7-13c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--primary);">Smart Doors</h3>
+                    <p class="text-gray-700">Flush doors with digital locks on main entrance for security & style</p>
+                </div>
+
+                <!-- Flooring -->
+                <div class="p-6 rounded-xl" style="background: linear-gradient(135deg, #D9EDFF 0%, #B4DCFF 100%); border-left: 5px solid var(--secondary);">
+                    <svg class="w-8 h-8 mb-3" style="color: var(--secondary);" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 3h18v18H3V3zm2 2v14h14V5H5z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--secondary);">Premium Flooring</h3>
+                    <p class="text-gray-700">Vitrified tiles (600×1200mm) with granite kitchen platforms</p>
+                </div>
+
+                <!-- Windows -->
+                <div class="p-6 rounded-xl" style="background: linear-gradient(135deg, #E6FFE6 0%, #B4FFB4 100%); border-left: 5px solid var(--accent);">
+                    <svg class="w-8 h-8 mb-3" style="color: var(--accent-dark);" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 5v14h18V5H3zm2 2h5v5H5V7zm7 0h5v5h-5V7zm0 7h5v5h-5v-5zM5 14h5v5H5v-5z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-3" style="color: var(--accent-dark);">UPVC Windows</h3>
+                    <p class="text-gray-700">UPVC sliding glass windows for insulation & natural light</p>
+                </div>
+            </div>
+
+            <!-- Detailed Specs -->
+            <div class="mt-12 p-8 rounded-xl" style="background: linear-gradient(135deg, #FFF0E6 0%, #FFE5D9 100%);">
+                <h3 class="text-2xl font-bold mb-6" style="color: var(--primary);">Complete Specification Details</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="mb-2"><strong>Paint:</strong> External weather coat, internal plastic emulsion</p>
+                        <p class="mb-2"><strong>Ceiling:</strong> Gypsum ceiling in living hall & bedrooms</p>
+                        <p><strong>Windows Material:</strong> UPVC or equivalent material</p>
+                    </div>
+                    <div>
+                        <p class="mb-2"><strong>Main Entrance:</strong> Flush doors with digital locks</p>
+                        <p class="mb-2"><strong>Bedrooms:</strong> Flush doors for privacy & elegance</p>
+                        <p><strong>Quality Standard:</strong> International premium grade materials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-16 px-4" style="background: linear-gradient(135deg, #E6FFE6 0%, #D9FFD9 100%);">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center" style="color: var(--accent-dark);">Premium Amenities</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Experience luxurious community living</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Replaced emojis with SVG icons in amenities -->
+                <!-- Security -->
+                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-12 h-12" style="color: var(--secondary);" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3" style="color: var(--secondary);">24/7 Security</h3>
+                            <ul class="text-gray-700 space-y-2">
+                                <li>✓ Gated community with CCTV surveillance</li>
+                                <li>✓ CCTV vigilance facility around entire site</li>
+                                <li>✓ Land phones connecting to all flats</li>
+                                <li>✓ Professional security personnel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Backup -->
+                <div class="p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-start gap-4">
+                        <svg class="w-12 h-12" style="color: var(--primary);" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13 2h-2v3h2V2zm0 16h-2v3h2v-3zM3 13H0v-2h3v2zm18 0h3v-2h-3v2zM5.64 5.64L3.52 3.52 2.1 4.94l2.12 2.12 1.42-1.42zm12.72 12.72l2.12 2.12 1.42-1.42-2.12-2.12-1.42 1.42zM5.64 18.36l-1.42 1.42 2.12 2.12 1.42-1.42-2.12-2.12zm12.72-12.72l1.42-1.42-2.12-2.12-1.42 1.42 2.12 2.12zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/>
+                        </svg>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3" style="color: var(--primary);">24×7 Power Backup</h3>
+                            <ul class="text-gray-700 space-y-2">
+                                <li>✓ Continuous power to common areas</li>
+                                <li>✓ 24×7 backup to parking facilities</li>
+                                <li>✓ Uninterrupted electricity supply</li>
+                                <li>✓ Emergency power systems in place</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Amenities -->
+            <div class="mt-8 p-8 bg-white rounded-xl shadow-lg">
+                <h3 class="text-2xl font-bold mb-6" style="color: var(--accent-dark);">World-Class Facilities</h3>
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="p-4 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-2" style="color: var(--accent);" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 2H4c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM4 20V4h16v16H4z"/>
+                        </svg>
+                        <p class="font-semibold">Swimming Pool</p>
+                    </div>
+                    <div class="p-4 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-2" style="color: var(--primary);" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/>
+                        </svg>
+                        <p class="font-semibold">Yoga Studio</p>
+                    </div>
+                    <div class="p-4 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-2" style="color: var(--secondary);" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l-1-4.4-2.1 2v6h-2v-8l2.1-2 .6-3c-.3.7-1 1.2-1.6 1.2-.9 0-1.6-.8-1.6-1.8 0-.7.4-1.2.9-1.5.4-.4.8-.5 1.3-.5.9 0 1.6.5 1.9 1.2l.5 2.1 2.2-1.4.9 2.9h8v-2h-8l-.9-2.4 4.5-3.4.9 4.6h7v2h-6.7l-.5-2.1-4.3 3.2.8 3.1h8.6v2h-9.5l-.9-4.5z"/>
+                        </svg>
+                        <p class="font-semibold">Fitness Center</p>
+                    </div>
+                    <div class="p-4 text-center">
+                        <svg class="w-12 h-12 mx-auto mb-2" style="color: var(--accent-dark);" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.5 20l-5.071-5.071m5.071 0l5.071-5.071M9.429 14.929L4.358 9.858m0 0L9.429 4.787m-5.071 5.071h5.071v5.071H4.358V9.858z"/>
+                        </svg>
+                        <p class="font-semibold">Green Spaces</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flat Details Section -->
+    <section id="flats" class="py-16 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center" style="color: var(--secondary);">Flat Details & Specifications</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Choose your perfect home</p>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #004E89 0%, #1E7BC8 100%); color: white;">
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Flat No.</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Carpet Area (SFT)</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Balcony (SFT)</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">Built-Up (SFT)</th>
+                            <th class="border border-gray-300 px-4 py-3 text-left font-bold">S.B.U.A (SFT)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-orange-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-semibold" style="color: var(--primary);">Flat 1</td>
+                            <td class="border border-gray-300 px-4 py-3">943.54</td>
+                            <td class="border border-gray-300 px-4 py-3">49.21</td>
+                            <td class="border border-gray-300 px-4 py-3">1110.71</td>
+                            <td class="border border-gray-300 px-4 py-3 font-bold">1566</td>
+                        </tr>
+                        <tr class="hover:bg-orange-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-semibold" style="color: var(--primary);">Flat 2</td>
+                            <td class="border border-gray-300 px-4 py-3">947.21</td>
+                            <td class="border border-gray-300 px-4 py-3">53.71</td>
+                            <td class="border border-gray-300 px-4 py-3">1123.69</td>
+                            <td class="border border-gray-300 px-4 py-3 font-bold">1584</td>
+                        </tr>
+                        <tr class="hover:bg-orange-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-semibold" style="color: var(--primary);">Flat 3</td>
+                            <td class="border border-gray-300 px-4 py-3">722.28</td>
+                            <td class="border border-gray-300 px-4 py-3">82.07</td>
+                            <td class="border border-gray-300 px-4 py-3">906.42</td>
+                            <td class="border border-gray-300 px-4 py-3 font-bold">1278</td>
+                        </tr>
+                        <tr class="hover:bg-orange-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-semibold" style="color: var(--primary);">Flat 4</td>
+                            <td class="border border-gray-300 px-4 py-3">723.06</td>
+                            <td class="border border-gray-300 px-4 py-3">25.70</td>
+                            <td class="border border-gray-300 px-4 py-3">848.85</td>
+                            <td class="border border-gray-300 px-4 py-3 font-bold">1196</td>
+                        </tr>
+                        <tr class="hover:bg-orange-50 transition">
+                            <td class="border border-gray-300 px-4 py-3 font-semibold" style="color: var(--primary);">Flat 5</td>
+                            <td class="border border-gray-300 px-4 py-3">870.98</td>
+                            <td class="border border-gray-300 px-4 py-3">24.57</td>
+                            <td class="border border-gray-300 px-4 py-3">996.60</td>
+                            <td class="border border-gray-300 px-4 py-3 font-bold">1405</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Schedule Section -->
+    <section id="payment" class="py-16 px-4" style="background: linear-gradient(135deg, #D9EDFF 0%, #B4DCFF 100%);">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center" style="color: var(--secondary);">Flexible Payment Schedule</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Convenient installment options for your dream home</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">1st Instalment</p>
+                    <p class="text-gray-700">On booking of flat: <span class="font-bold text-xl">10%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">2nd Instalment</p>
+                    <p class="text-gray-700">Completion on stilt slab: <span class="font-bold text-xl">15%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">3rd Instalment</p>
+                    <p class="text-gray-700">Completion on 1st-floor roof slab: <span class="font-bold text-xl">10%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">4th Instalment</p>
+                    <p class="text-gray-700">Completion on 2nd-floor roof slab: <span class="font-bold text-xl">10%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">5th Instalment</p>
+                    <p class="text-gray-700">Completion on 3rd-floor roof slab: <span class="font-bold text-xl">10%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">6th Instalment</p>
+                    <p class="text-gray-700">Completion on 4th-floor roof slab: <span class="font-bold text-xl">10%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">7th Instalment</p>
+                    <p class="text-gray-700">Completion on 5th-floor roof slab: <span class="font-bold text-xl">10%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">8th Instalment</p>
+                    <p class="text-gray-700">Completion on brick work: <span class="font-bold text-xl">15%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">9th Instalment</p>
+                    <p class="text-gray-700">Completion on internal plastering: <span class="font-bold text-xl">5%</span></p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <p class="font-bold text-lg mb-2" style="color: var(--primary);">10th Instalment</p>
+                    <p class="text-gray-700">Completion on doors and windows: <span class="font-bold text-xl">5%</span></p>
+                </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-white rounded-xl text-center">
+                <p class="text-lg text-gray-700 mb-2">Flexible payment options with <strong>No Hidden Charges</strong></p>
+                <p style="color: var(--primary);" class="text-xl font-bold">Total: 100% of property value</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 gradient-primary text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Invest in Your Dream Home?</h2>
+            <p class="text-xl mb-8">Join the SUN LIVINGS community today and experience premium residential living</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-full font-bold hover:bg-yellow-300 transition text-lg">
+                    Schedule Site Visit
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-orange-600 transition text-lg">
+                    Download Brochure
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4" style="color: var(--primary);">SUN LIVINGS</h3>
+                    <p class="text-gray-400">Premium residential excellence meets modern living</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><a href="#specifications" class="hover:text-white transition">Specifications</a></li>
+                        <li><a href="#amenities" class="hover:text-white transition">Amenities</a></li>
+                        <li><a href="#flats" class="hover:text-white transition">Flat Details</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <p class="text-gray-400">Email: info@sunlivings.com</p>
+                    <p class="text-gray-400">Phone: +91 XXXX XXX XXX</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SUN LIVINGS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

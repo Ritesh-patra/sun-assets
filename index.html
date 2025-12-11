@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -37,6 +38,8 @@
         }
 
         body {
+            width: 100%;
+            overflow-x: hidden;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: var(--gray-700);
             line-height: 1.6;
@@ -153,7 +156,7 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(15, 118, 110, 0.4), rgba(249, 115, 22, 0.2));
+            background: linear-gradient(135deg, rgba(15, 118, 110, 0.2), rgba(249, 115, 22, 0.2));
             z-index: 2;
         }
 
@@ -1045,7 +1048,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.2);
             display: none;
             z-index: 900;
         }
@@ -1056,12 +1059,12 @@
     </style>
 </head>
 
-<body>
+<body class="">
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <a href="#" class="logo flex items-center gap-2">
-                <img src="images/sunset logo.webp" alt="Sun Assets" class="h-12 w-auto object-contain">
+                <img src="images/sunset logo.webp" alt="Sun Assets" class="h-20 w-auto object-contain">
             </a>
 
             <ul class="nav-links">
@@ -1112,7 +1115,7 @@
                         <p>Discover the finest properties with stunning views and modern amenities</p>
                         <div class="hero-buttons">
                             <a href="#featured" class="btn btn-primary">Explore Properties</a>
-                            <a href="#about" class="btn btn-secondary">Learn More</a>
+                            <!-- <a href="#about" class="btn btn-secondary">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -1154,7 +1157,6 @@
     <!-- About Section -->
     <section id="about" class="py-16 sm:py-20 bg-gray-100">
         <div class="container mx-auto px-4 max-w-7xl">
-
             <div class="section-title text-center mb-12">
                 <h2
                     class="text-4xl font-extrabold text-gray-900 border-b-4 border-blue-600 inline-block px-4 pb-1 mb-2">
@@ -1165,17 +1167,16 @@
             </div>
 
             <div class="about-grid grid grid-cols-1 lg:grid-cols-12 gap-10 items-center scroll-animation">
-
                 <div
                     class="about-image  lg:col-span-5 w-full max-w-xl mx-auto lg:mx-0 shadow-2xl rounded-2xl transform hover:scale-[1.01] transition-all duration-500 ease-in-out">
                     <div class="swiper myVideoSwiper rounded-2xl overflow-hidden aspect-video h-[90%]">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <video src="videos/video1.mp4" autoplay muted loop
+                                <img src="images/sunlivingg.jpg" alt="About Us Image"
                                     class="w-full h-full object-cover"></video>
                             </div>
                             <div class="swiper-slide">
-                                <video src="videos/video2.mp4" autoplay muted loop
+                                <video src="videos/video1.mp4" autoplay muted loop
                                     class="w-full h-full object-cover"></video>
                             </div>
                         </div>
@@ -1285,7 +1286,7 @@
                 <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 
                         w-full sm:w-[45%] scroll-animation">
                     <div class="relative rounded-lg overflow-hidden">
-                        <img src="images/sun asset1.webp" alt="SUN CITY" class="w-full h-56 object-cover">
+                        <img src="images/sunlivings.jpg" alt="SUN CITY" class="w-full h-80 object-cover">
                         <span class="absolute top-3 left-3 bg-orange-600 text-white text-sm px-3 py-1 rounded-full">
                             Featured
                         </span>
@@ -1306,10 +1307,10 @@
                         </p>
                         <div class="text-lg font-bold text-orange-600 mt-2">₹ —</div>
 
-                        <button
-                            class="mt-3 w-full bg-orange-600 text-white py-2 rounded-xl font-semibold hover:bg-orange-700 transition">
-                            Contact for Pricing
-                        </button>
+                        <a href="sunliving.html"
+                            class="mt-3 w-full bg-orange-600 text-white py-2 text-center px-auto rounded-xl font-semibold hover:bg-orange-700 transition">
+                            Know more
+                        </a >
                     </div>
                 </div>
 
@@ -1317,7 +1318,7 @@
                 <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 
                         w-full sm:w-[45%] scroll-animation">
                     <div class="relative rounded-lg overflow-hidden">
-                        <img src="images/sun assets 2.webp" alt="SUN DHANVANTRI" class="w-full h-56 object-cover">
+                        <img src="images/sun assets 2.webp" alt="SUN DHANVANTRI" class="w-full h-80 object-cover">
                         <span class="absolute top-3 left-3 bg-green-600 text-white text-sm px-3 py-1 rounded-full">
                             New
                         </span>
@@ -1337,14 +1338,237 @@
                             solutions at reasonable prices, tailored to your specific requirements.
                         </p>
                         <div class="text-lg font-bold text-orange-600 mt-2">₹ —</div>
-                        <button
+                        <a href="dhanmantri.html"
                             class="mt-3 w-full bg-orange-600 text-white py-2 rounded-xl font-semibold hover:bg-orange-700 transition">
-                            Contact for Pricing
-                        </button>
+                            Know more
+                    </a>
                     </div>
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- comming soon -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our Projects: Progress and Quality Assurance
+                </h2>
+                <p class="mt-4 text-xl text-gray-600">
+                    Building with the highest standards of trust and engineering.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+                <!-- Image Section -->
+                <div
+                    class="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-2xl transition duration-500 transform hover:scale-[1.01]">
+                    <img class="w-full h-full object-contain max-h-[500px]" src="images/workingprogress.jpg"
+                        alt="Work in Progress" loading="lazy">
+
+                    <div
+                        class="absolute bottom-0 left-0 bg-indigo-700/80 p-4 text-white font-bold text-lg rounded-tr-xl">
+                        Work in Progress
+                    </div>
+                </div>
+
+                <!-- Coming Soon Section -->
+                <div class="order-1 md:order-2 p-6 md:p-0 text-center md:text-left">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">
+                        🚧 More Updates
+                    </h3>
+
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg border-l-4 border-gray-400">
+                        <p class="text-2xl font-semibold text-gray-700">
+                            ⏳ Coming Soon...
+                        </p>
+                        <p class="text-lg text-gray-600 mt-2">
+                            Hamare project ke naye updates jald hi yahan upload kiye jayenge.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="py-16 sm:py-24 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+                <h2
+                    class="text-4xl font-extrabold text-white sm:text-5xl border-b-4 border-indigo-500/50 inline-block pb-3">
+                    Quality & Financial Assurance
+                </h2>
+                <p class="mt-4 text-xl text-gray-400 max-w-3xl mx-auto">
+                    Building with the highest standards of trust and engineering, guaranteed by meticulous processes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
+
+                <div
+                    class="bg-white p-8 sm:p-10 rounded-3xl shadow-2xl transition duration-500 transform hover:-translate-y-1 hover:ring-4 hover:ring-indigo-500/50">
+
+                    <div class="flex items-start mb-4">
+                        <div class="p-3 mr-4 bg-indigo-600 rounded-full shadow-lg">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="text-2xl font-extrabold text-indigo-800 pt-1">
+                            Bank Approvals & Home Loans
+                        </p>
+                    </div>
+
+                    <p class="text-lg text-gray-700 leading-relaxed pl-14">
+                        Our projects are approved by leading banks, ensuring a smooth and hassle-free home loan
+                        process for our clients.
+                    </p>
+
+                </div>
+
+                <div
+                    class="bg-white p-8 sm:p-10 rounded-3xl shadow-2xl transition duration-500 transform hover:-translate-y-1 hover:ring-4 hover:ring-green-500/50">
+
+                    <div class="flex items-start mb-4">
+                        <div class="p-3 mr-4 bg-green-600 rounded-full shadow-lg">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047 12.03 12.03 0 00-1.258 1.487 12.028 12.028 0 00-.791 2.505c-.09.6-.07 1.2.06 1.8.18.9.45 1.77.8 2.62a12.03 12.03 0 002.04 2.82 12.028 12.028 0 003.74 2.37 12.03 12.03 0 002.34.42 12.03 12.03 0 002.34-.42 12.028 12.028 0 003.74-2.37 12.03 12.03 0 002.04-2.82c.35-.85.62-1.72.8-2.62.13-.6.15-1.2.06-1.8a12.028 12.028 0 00-.79-2.505 12.03 12.03 0 00-1.258-1.487z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="text-2xl font-extrabold text-green-800 pt-1">
+                            Certified Soil Testing
+                        </p>
+                    </div>
+
+                    <p class="text-lg text-gray-700 leading-relaxed pl-14">
+                        We ensure that all soil testing is conducted and certified by leading soil testing
+                        laboratories, enabling stronger, safer, and more durable structures through accurate technical
+                        assessment.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- up comming projects -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-14">
+                <h2
+                    class="text-4xl font-extrabold text-gray-900 sm:text-5xl border-b-4 border-indigo-500/50 inline-block pb-3">
+                    Upcoming Projects
+                </h2>
+                <p class="mt-4 text-xl text-gray-600">
+                    A glimpse into the future: Our exciting new projects at prime locations.
+                </p>
+            </div>
+
+            <div
+                class="bg-gray-50 rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 transition duration-500 hover:shadow-indigo-300/50">
+
+                <div class="lg:col-span-2 relative min-h-[300px] lg:min-h-full">
+                    <img class="w-full h-full object-cover absolute inset-0 filter blur-sm opacity-50"
+                        src="[replace_with_your_project_image_url]" alt="Upcoming Project Visual" loading="lazy"
+                        onerror="this.onerror=null;this.src='https://via.placeholder.com/600x800/1f2937/ffffff?text=Project+Visual+Coming+Soon';">
+                    <div class="absolute inset-0 bg-gray-800/70 flex items-center justify-center p-6">
+                        <span
+                            class="text-white text-2xl font-bold tracking-wider uppercase border-2 border-white p-3 rotate-1">Project
+                            Renders Soon</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 p-8 sm:p-12 bg-white rounded-xl shadow-2xl">
+                    <h3 class="text-4xl font-extrabold text-indigo-800 mb-8 border-b-4 border-indigo-200 pb-3">
+                        <i class="fas fa-rocket text-indigo-600 mr-3"></i> Exciting New Ventures
+                    </h3>
+
+                    <ul class="space-y-6 text-xl text-gray-800 list-none pl-0 mb-10">
+
+                        <li
+                            class="bg-indigo-50 p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.01] border-l-8 border-indigo-600">
+                            <div class="flex items-start">
+                                <span class="text-indigo-600 flex-shrink-0 mr-4 text-2xl leading-none pt-1">
+                                    <i class="fas fa-building"></i>
+                                </span>
+                                <span>
+                                    <span class="font-bold text-indigo-900 block text-2xl">Sun Livings – Block B &
+                                        C</span>
+                                    <span class="text-lg text-gray-600 block mt-1 flex items-center">
+                                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                                        Nilanchal Nagar, 7th Lane, Brahmapur
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li
+                            class="bg-indigo-50 p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.01] border-l-8 border-indigo-600">
+                            <div class="flex items-start">
+                                <span class="text-indigo-600 flex-shrink-0 mr-4 text-2xl leading-none pt-1">
+                                    <i class="fas fa-building"></i>
+                                </span>
+                                <span>
+                                    <span class="font-bold text-indigo-900 block text-2xl">Sun Lotus – Khudasingi</span>
+                                    <span class="text-lg text-gray-600 block mt-1 flex items-center">
+                                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                                        Khudasingi
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+
+                        <li
+                            class="bg-indigo-50 p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out hover:shadow-xl hover:scale-[1.01] border-l-8 border-indigo-600">
+                            <div class="flex items-start">
+                                <span class="text-indigo-600 flex-shrink-0 mr-4 text-2xl leading-none pt-1">
+                                    <i class="fas fa-building"></i>
+                                </span>
+                                <span>
+                                    <span class="font-bold text-indigo-900 block text-2xl">Saptagiri Heights by Sun
+                                        Assets</span>
+                                    <span class="text-lg text-gray-600 block mt-1 flex items-center">
+                                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                                        NH-5, Near Andhapasara Flyover
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <hr class="my-10 border-indigo-300">
+
+                    <div class="mt-8 text-center p-6 bg-yellow-50 rounded-2xl border-4 border-yellow-300 shadow-inner">
+                        <p class="text-2xl font-extrabold text-yellow-900">
+                            <i class="fas fa-bell text-yellow-600 mr-2"></i> Details Coming Soon!
+                        </p>
+                        <p class="text-lg text-yellow-700 mt-2 font-medium">
+                            Register your interest now to get early access to plans and pricing. Don't miss out!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -1381,18 +1605,7 @@
                     <p>Comprehensive investment advice for property portfolios to maximize your returns and
                         growth potential.</p>
                 </div>
-                <div class="service-card scroll-animation">
-                    <div class="service-icon"><i class="fas fa-building"></i></div>
-                    <h3>Property Management</h3>
-                    <p>Full-service property management including maintenance, rental coordination, and guest services
-                        for your estate.</p>
-                </div>
-                <div class="service-card scroll-animation">
-                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>Exclusive Partnerships</h3>
-                    <p>Strategic partnerships with premium service providers to offer comprehensive solutions for luxury
-                        living.</p>
-                </div>
+
                 <div class="service-card scroll-animation">
                     <div class="service-icon"><i class="fas fa-handshake"></i></div>
                     <h3>Land/Site development</h3>
@@ -1402,6 +1615,15 @@
                         guidance to enhance the value and usability of your property.
                     </p>
                 </div>
+                <div class="service-card scroll-animation">
+                    <div class="service-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Exclusive Partnerships</h3>
+                    <p>Strategic partnerships with premium service providers to offer comprehensive solutions for luxury
+                        living.</p>
+                </div>
+
+
+
             </div>
         </div>
     </section>
@@ -1445,7 +1667,84 @@
         </div>
     </section>
 
-    <!-- Partners Section -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-14">
+                <h2
+                    class="text-4xl font-extrabold text-gray-900 sm:text-5xl border-b-4 border-indigo-500/50 inline-block pb-3">
+                    Our Specialized Project Services
+                </h2>
+                <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide comprehensive and complete solutions in real estate and construction, built on expertise
+                    and trust.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
+
+                <div
+                    class="bg-white p-8 sm:p-10 rounded-3xl shadow-2xl transition duration-500 transform hover:-translate-y-1 hover:ring-4 hover:ring-indigo-200/50 border border-gray-100">
+
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 mr-4 bg-indigo-500 rounded-xl shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 20h6">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-indigo-800">
+                            Institutional Projects
+                        </h3>
+                    </div>
+
+                    <p class="text-xl text-gray-700 leading-snug mb-6">
+                        We also facilitate land acquisition and arrangements for industries, educational
+                        institutions, hospitals, and other commercial or institutional projects, ensuring reliable
+                        support from planning to execution.
+                    </p>
+                    <div class="mt-6">
+                        <p class="text-sm font-semibold text-gray-500 border-l-4 border-indigo-400 pl-3 italic">
+                            Reliable support from land procurement to project execution.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-8 sm:p-10 rounded-3xl shadow-2xl transition duration-500 transform hover:-translate-y-1 hover:ring-4 hover:ring-green-200/50 border border-gray-100">
+
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 mr-4 bg-green-500 rounded-xl shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-3xl font-bold text-green-800">
+                            Turnkey Contracts
+                        </h3>
+                    </div>
+
+                    <p class="text-xl text-gray-700 leading-snug mb-6">
+                        We also undertake complete turnkey construction contracts, delivering end-to-end solutions
+                        from soil testing and planning to structural work and final interiors, ensuring quality, timely
+                        execution, and hassle-free project completion.
+                    </p>
+                    <div class="mt-6">
+                        <p class="text-sm font-semibold text-gray-500 border-l-4 border-green-400 pl-3 italic">
+                            End-to-end solutions from soil testing to final interiors.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Partners Section -->
     <section class="py-12 sm:py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1465,7 +1764,7 @@
                 <div
                     class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
                     <img src="images/madhu1.jpg" alt="Kotni Madhu Kumar"
-                        class="w-full h-60 object-cover shadow-md rounded-t-xl">
+                        class="w-full h-80 lg:h-60 object-cover shadow-md rounded-t-xl">
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">Kotni Madhu Kumar</h3>
                         <p class="text-gray-500 mb-2">21 years of real estate experience</p>
@@ -1478,7 +1777,7 @@
                 <div
                     class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
                     <img src="images/rama1.jpg" alt="V Sri Ram"
-                        class="w-full h-60 object-cover object-top shadow-md rounded-t-xl">
+                        class="w-full h-80 lg:h-60 object-cover object-top shadow-md rounded-t-xl">
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">V Sri Ram</h3>
                         <p class="text-gray-500 mb-2">15 years of real estate experience</p>
@@ -1491,7 +1790,7 @@
                 <div
                     class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
                     <img src="images/rama.jpg" alt="GJ Ravi"
-                        class="w-full h-60 object-cover object-top shadow-md rounded-t-xl">
+                        class="w-full h-80 lg:h-60 object-cover object-top shadow-md rounded-t-xl">
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">GJ Ravi</h3>
                         <p class="text-gray-500 mb-2">9 years of real estate experience</p>
@@ -1504,7 +1803,7 @@
                 <div
                     class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
                     <img src="images/uttam.jpg" alt="K Uttam"
-                        class="w-full h-60 object-cover object-top shadow-md rounded-t-xl">
+                        class="w-full h-80 lg:h-60 object-cover object-top shadow-md rounded-t-xl">
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">K Uttam</h3>
                         <p class="text-gray-500 mb-2">15 years of real estate experience</p>
@@ -1591,6 +1890,7 @@
                 <h2>Get In Touch</h2>
                 <p>We're here to help and answer any question you might have</p>
             </div>
+
             <div class="contact-grid">
                 <div>
 
@@ -1610,8 +1910,8 @@
                         </div>
                         <div class="contact-details">
                             <h3>Phone</h3>
-                            <p>+91 98891 23456</p>
-                            <p>+91 91782 23344</p>
+                            <p class="text-2xl font-bold">+91 98891 23456</p>
+                            <p class="text-2xl font-bold">+91 91782 23344</p>
                         </div>
                     </div>
 
@@ -1621,7 +1921,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <p>contact@sunassets.com</p>
+                            <p class="font-bold text-lg">sunassets6000@gmail.com</p>
                         </div>
                     </div>
 
@@ -1633,16 +1933,20 @@
                         <div class="contact-details">
                             <h3>Location Map</h3>
 
-                            <!-- Google Map Embed -->
-                            <div
-                                style="width: 100%; height: 250px; border-radius: 10px; overflow: hidden; margin-bottom: 15px;">
+                            <div style="
+                            width: 100%;
+                            height: 250px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            margin-bottom: 15px;">
+
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.3406026104703!2d84.78189251023788!3d19.31102104447811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d51aaf31c749d%3A0x231b3911f842de9d!2sSun%20Assets!5e0!3m2!1sen!2sin!4v1765371166801!5m2!1sen!2sin"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    style="width:100%; height:100%; border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
 
-                            <!-- Buttons -->
                             <div style="display: flex; gap: 10px;">
                                 <a href="https://maps.app.goo.gl/V7KpdsZ6sXWwQzpj6" target="_blank"
                                     class="btn-direction"
@@ -1655,11 +1959,11 @@
                                     Call Now
                                 </a>
                             </div>
+
                         </div>
                     </div>
 
                 </div>
-
 
                 <form class="contact-form scroll-animation" id="contactForm">
                     <div class="form-group">
@@ -1683,6 +1987,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Newsletter Section -->
     <section class="newsletter">
@@ -1804,6 +2109,14 @@
     <button class="fab" id="fabBtn" onclick="openModal()">
         <i class="fas fa-comment"></i>
     </button>
+
+    <a href="https://wa.me/919889123456?text=Welcome%20to%20Sun%20Assets" target="_blank" class="fixed bottom-[15%] right-0 w-16 h-16 bg-green-500 text-white rounded-full 
+          flex items-center justify-center text-4xl shadow-xl">
+        <i class="fa-brands fa-whatsapp z-[999]"></i>
+    </a>
+
+
+
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
