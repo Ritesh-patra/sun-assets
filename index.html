@@ -144,12 +144,20 @@
         }
 
         .swiper-slide {
+            width: 100vw;
+            height: 100vh;
             position: relative;
             background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
         }
 
         .swiper-slide::before {
@@ -330,20 +338,7 @@
             line-height: 1.8;
         }
 
-        .about-image {
-            position: relative;
-            height: 400px;
-            border-radius: 15px;
-            overflow: hidden;
-            background: transparent;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
 
-        .about-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
 
         /* Services Section */
         .services {
@@ -1167,24 +1162,74 @@
             </div>
 
             <div class="about-grid grid grid-cols-1 lg:grid-cols-12 gap-10 items-center scroll-animation">
+                 <!-- LEFT : BIG SQUARE SWIPER -->
+            <div class="lg:col-span-5 flex justify-center">
                 <div
-                    class="about-image  lg:col-span-5 w-full max-w-xl mx-auto lg:mx-0 shadow-2xl rounded-2xl transform hover:scale-[1.01] transition-all duration-500 ease-in-out">
-                    <div class="swiper myVideoSwiper rounded-2xl overflow-hidden aspect-video h-[90%]">
+                    class="w-full max-w-[520px] aspect-square rounded-2xl shadow-2xl overflow-hidden">
+
+                    <div class="swiper myVideoSwiper w-full h-full">
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
-                                <img src="images/sunlivingg.jpg" alt="About Us Image"
-                                    class="w-full h-full object-cover"></video>
+                                <img src="officeimage/IMG-20251212-WA0019.jpg"
+                                    class="w-full h-full object-cover" alt="">
                             </div>
+
                             <div class="swiper-slide">
-                                <video src="videos/video1.mp4" autoplay muted loop
-                                    class="w-full h-full object-cover"></video>
+                                <img src="officeimage/IMG-20251212-WA0023.jpg"
+                                    class="w-full h-full object-cover" alt="">
                             </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0024.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0029.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0030.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0031.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0032.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0033.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0034.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="officeimage/IMG-20251212-WA0035.jpg"
+                                    class="w-full h-full object-cover" alt="">
+                            </div>
+
                         </div>
+
+                        <!-- CONTROLS -->
                         <div class="swiper-pagination !bottom-4"></div>
                         <div class="swiper-button-next text-white"></div>
                         <div class="swiper-button-prev text-white"></div>
                     </div>
+
                 </div>
+            </div>
 
                 <div
                     class="about-content lg:col-span-7 p-8 bg-white rounded-2xl shadow-2xl border-l-4 border-blue-600 flex flex-col justify-start">
@@ -1266,9 +1311,8 @@
         </div>
     </section>
 
-
     <!-- Featured Projects -->
-    <section id="featured" class="py-16 bg-gray-50">
+    <section hidden id="featured" class="py-16 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
 
             <!-- Section Title -->
@@ -1310,7 +1354,7 @@
                         <a href="sunliving.html"
                             class="mt-3 w-full bg-orange-600 text-white py-2 text-center px-auto rounded-xl font-semibold hover:bg-orange-700 transition">
                             Know more
-                        </a >
+                        </a>
                     </div>
                 </div>
 
@@ -1341,7 +1385,7 @@
                         <a href="dhanmantri.html"
                             class="mt-3 w-full bg-orange-600 text-white py-2 rounded-xl font-semibold hover:bg-orange-700 transition">
                             Know more
-                    </a>
+                        </a>
                     </div>
                 </div>
 
@@ -1349,55 +1393,458 @@
         </div>
     </section>
 
-    <!-- comming soon -->
-    <section class="py-16 sm:py-24 bg-white">
+    <!-- sunlivings -->
+    <section class="py-16 sm:py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                    Our Projects: Progress and Quality Assurance
+                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                    Featured Project: SUN LIVINGS
                 </h2>
                 <p class="mt-4 text-xl text-gray-600">
-                    Building with the highest standards of trust and engineering.
+                    Thoughtfully planned, efficient, and sustainable living.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden p-8 lg:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-                <!-- Image Section -->
-                <div
-                    class="order-2 md:order-1 relative rounded-2xl overflow-hidden shadow-2xl transition duration-500 transform hover:scale-[1.01]">
-                    <img class="w-full h-full object-contain max-h-[500px]" src="images/workingprogress.jpg"
-                        alt="Work in Progress" loading="lazy">
+                    <div>
+                        <div class="relative rounded-xl overflow-hidden shadow-xl">
+                            <img src="images/sunlivings.jpg" alt="SUN LIVINGS Project View"
+                                class="w-full h-80 lg:h-[80vh] object-cover">
+                            <span
+                                class="absolute top-4 left-4 bg-orange-600 text-white text-sm font-semibold px-4 py-1 rounded-full">
+                                Featured Project
+                            </span>
+                        </div>
 
-                    <div
-                        class="absolute bottom-0 left-0 bg-indigo-700/80 p-4 text-white font-bold text-lg rounded-tr-xl">
-                        Work in Progress
+                        <div class="mt-8">
+                            <h3 class="text-3xl font-bold text-gray-800">SUN LIVINGS (BeMC Approved)</h3>
+                            <div class="flex items-center text-gray-600 mt-2 mb-4">
+                                <i class="fas fa-map-marker-alt mr-2 text-orange-500"></i>
+                                <span class="text-lg">Nilanchal Nagar 7th Lane, Brahmapur</span>
+                            </div>
+
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Our land and site development services integrate scientific Vastu principles with the
+                                expertise of skilled structural and architectural engineers. We specialize in creating
+                                thoughtfully planned, efficient, and sustainable layouts and structures that improve
+                                stability, functionality, and long-term value.
+                            </p>
+
+                            <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                                <p class="text-md text-gray-800">
+                                    In addition, we offer modern interior design solutions at reasonable prices,
+                                    tailored to your specific requirements.
+                                </p>
+                            </div>
+
+                            <div class="text-2xl font-bold text-orange-600 mt-4">Price: Enquire Now (₹ —)</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Coming Soon Section -->
-                <div class="order-1 md:order-2 p-6 md:p-0 text-center md:text-left">
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">
-                        🚧 More Updates
-                    </h3>
+                    <div class="mt-8 md:mt-0">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Floor Plan & Virtual Tour</h3>
 
-                    <div class="bg-gray-100 p-8 rounded-xl shadow-lg border-l-4 border-gray-400">
-                        <p class="text-2xl font-semibold text-gray-700">
-                            ⏳ Coming Soon...
-                        </p>
-                        <p class="text-lg text-gray-600 mt-2">
-                            Hamare project ke naye updates jald hi yahan upload kiye jayenge.
-                        </p>
+                        <div class="relative rounded-xl overflow-hidden shadow-xl border border-gray-200">
+                            <img src="images/sunlingfloorplan.png" alt="SUN LIVINGS Floor Plan"
+                                class="w-full h-auto object-contain max-h-[400px]">
+                            <div
+                                class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <p class="text-white text-xl font-bold p-3 bg-black/50 rounded">Click to View Floor Plan
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <div class="relative rounded-xl overflow-hidden shadow-xl border border-gray-200 bg-black">
+                                <video id="sunliving-inline-video"
+                                    class="w-full h-auto object-contain max-h-[500px] bg-black"
+                                    src="videos/sunliving video.mp4" poster="images/sunlivingg.jpg" playsinline
+                                    preload="metadata" controls muted></video>
+                                <button id="sunliving-play-btn" aria-label="Play Sun Living"
+                                    class="absolute inset-0 m-auto w-24 h-24 rounded-full bg-black/50 text-white text-4xl flex items-center justify-center hover:bg-black/60 transition">
+                                    ▶
+                                </button>
+                            </div>
+
+                            <a href="sunliving.html"
+                                class="mt-4 w-full block text-center bg-orange-600 text-white py-3 px-6 rounded-xl font-semibold text-lg hover:bg-orange-700 transition shadow-lg">
+                                Know More About SUN LIVINGS
+                            </a>
+                        </div>
                     </div>
-                </div>
 
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- dhanmantri -->
+    <section class="py-16 sm:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                    Featured Project: SUN DHANVANTRI
+                </h2>
+                <p class="mt-4 text-xl text-gray-600">
+                    A new era of thoughtfully planned, efficient, and sustainable structures.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden p-8 lg:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start">
+
+                    <div>
+                        <div class="relative rounded-xl overflow-hidden shadow-xl">
+                            <img src="images/sun assets 2.webp" alt="SUN DHANVANTRI Project View"
+                                class="w-full h-80 lg:h-[80vh] object-cover">
+                            <span
+                                class="absolute top-4 left-4 bg-green-600 text-white text-sm font-semibold px-4 py-1 rounded-full">
+                                New Project
+                            </span>
+                        </div>
+
+                        <div class="mt-8">
+                            <h3 class="text-3xl font-bold text-gray-800">SUN DHANVANTRI (RERA Approved)</h3>
+                            <div class="flex items-center text-gray-600 mt-2 mb-4">
+                                <i class="fas fa-map-marker-alt mr-2 text-green-500"></i>
+                                <span class="text-lg">Bimanagar, adjacent to Ambapua Main Road</span>
+                            </div>
+
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Our land and site development services integrate scientific Vastu principles with
+                                the
+                                expertise of skilled structural and architectural engineers. We specialize in creating
+                                thoughtfully planned, efficient, and sustainable layouts and structures that improve
+                                stability, functionality, and long-term value.
+                            </p>
+
+                            <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                                <p class="text-md text-gray-800">
+                                    In addition, we offer modern interior design solutions at reasonable prices,
+                                    tailored to your specific requirements.
+                                </p>
+                            </div>
+
+                            <div class="text-2xl font-bold text-green-600 mt-4">Price: Enquire Now (₹ —)</div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 md:mt-0">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Floor Plan & Virtual Tour</h3>
+
+                        <div class="relative rounded-xl overflow-hidden shadow-xl border border-gray-200">
+
+                            <img src="images/dhanmantri.jpg" alt="SUN DHANVANTRI Floor Plan"
+                                class="w-full h-auto object-contain max-h-[500px]">
+                            <div
+                                class="absolute inset-0 bg-black/10 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                                <p class="text-white text-xl font-bold p-3 bg-black/50 rounded">Click to View Floor Plan
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <div class="relative rounded-xl overflow-hidden shadow-xl border border-gray-200 bg-black">
+                                <video id="dhanvantri-inline-video"
+                                    class="w-full h-auto object-contain max-h-[500px] bg-black"
+                                    src="videos/dhan mantri video.mp4" poster="images/dahanmantriposter.png" playsinline
+                                    preload="metadata" controls></video>
+                                <button id="dhanvantri-play-btn" aria-label="Play Dhanvantri"
+                                    class="absolute inset-0 m-auto w-24 h-24 rounded-full bg-black/50 text-white text-4xl flex items-center justify-center hover:bg-black/60 transition">
+                                    ▶
+                                </button>
+                            </div>
+
+                            <a href="dhanmantri.html"
+                                class="mt-4 w-full block text-center bg-green-600 text-white py-3 px-6 rounded-xl font-semibold text-lg hover:bg-green-700 transition shadow-lg">
+                                Know More About SUN DHANVANTRI
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
     </section>
 
 
+    <div id="dhanvantri-modal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden transition-opacity duration-300 
+           flex items-center justify-center">
+
+        <div class="bg-white rounded-lg shadow-2xl max-w-4xl w-[90%] mx-auto overflow-hidden relative">
+
+            <button id="close-dhanvantri-modal"
+                class="absolute top-3 right-3 text-black text-3xl font-bold z-50 hover:text-gray-600 transition"
+                aria-label="Close Modal">
+                &times;
+            </button>
+
+            <!-- VIDEO CONTAINER (Aspect Ratio Fixed) -->
+            <div class="relative w-full pt-[56.25%] ">
+                <video id="dhanvantri-video" class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="videos/dhan mantri video.mp4" autoplay playsinline>
+                </video>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="walkthrough-modal"
+        class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden transition-opacity duration-300 items-center justify-center">
+        <div class="bg-white rounded-lg shadow-2xl max-w-4xl w-[90%] mx-auto overflow-hidden relative">
+
+            <button id="close-walkthrough-modal"
+                class="absolute top-3 right-3 text-white text-3xl font-bold z-50 hover:text-gray-300 transition"
+                aria-label="Close Modal">
+                &times;
+            </button>
+
+            <div class="relative pt-[56.25%]">
+                <video id="walkthrough-video" class="absolute top-0 left-0 w-full h-full object-cover"
+                    src="videos/sunliving video.mp4" controls playsinline>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- comming soon sun living -->
+    <section class="py-16 sm:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                    Sun Living Block - A: Foundation Work Underway
+                </h2>
+                <p class="mt-4 text-xl text-gray-600">
+                    Laying a robust and stable foundation with engineering excellence and strict quality assurance.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-12 items-start">
+
+                <div class="order-1 lg:col-span-2">
+                    <div class="bg-blue-50 border-t-4 border-blue-600 rounded-xl shadow-2xl h-full">
+                        <div class="p-8 sm:p-10">
+                            <h3 class="text-3xl font-bold text-blue-800 mb-6 flex items-center">
+                                <i class="fas fa-hammer w-8 h-8 mr-3 text-blue-600"></i>
+                                Current Status: Footing Work in Progress
+                            </h3>
+
+                            <div class="mb-8">
+                                <p class="text-xl font-semibold text-gray-700 mb-3">
+                                    Total Foundation Phase in Progress:
+                                    <span class="text-blue-600 font-extrabold text-2xl">20%</span>
+                                </p>
+                                <div class="w-full bg-gray-200 rounded-full h-4">
+                                    <div class="bg-blue-600 h-4 rounded-full transition-all duration-1000"
+                                        style="width: 30%"></div>
+                                </div>
+                            </div>
+
+                            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                The project has successfully entered the crucial Footing and Foundation Phase.
+                                Detailed excavation and initial rebar cage assembly are currently in progress, ensuring
+                                structural integrity from the ground up.
+                            </p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800">
+                                <div class="flex items-center">
+                                    <span class="text-green-500 mr-2">✔️</span>
+                                    <span>Site Clearance & Grading: 100% Complete</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-yellow-600 mr-2">🛠️</span>
+                                    <span>Excavation for Footings: 85% Completed</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-yellow-600 mr-2">🛠️</span>
+                                    <span>Rebar Cage Assembly (Footings): 40% Underway</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-gray-500 mr-2">🗓️</span>
+                                    <span>Next Major Milestone: Ground Beam Casting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="order-2 lg:col-span-1 relative rounded-2xl overflow-hidden shadow-2xl transition duration-500 transform hover:scale-[1.02] h-full min-h-[300px]">
+
+                    <img class="w-full h-full object-cover" src="images/footing_work_rebar.jpg"
+                        alt="Footing Work Rebar Assembly in Progress" loading="lazy">
+
+                    <div class="absolute bottom-0 left-0 bg-blue-700/80 p-4 text-white font-bold text-lg rounded-tr-xl">
+                        Visual Update: Rebar Assembly
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-16 border-gray-200">
+
+            <div class="text-center">
+                <div class="bg-white p-8 rounded-xl shadow-xl border-l-4 border-teal-500 inline-block max-w-2xl">
+                    <p class="text-2xl font-semibold text-gray-800 flex items-center justify-center">
+                        <i class="fas fa-check-circle text-teal-500 mr-3"></i> Quality Check: Foundation Safety
+                    </p>
+                    <p class="text-lg text-gray-600 mt-3">
+                        Every footing and column rebar cage undergoes a mandatory expert engineering audit and
+                        third-party material testing before concrete pouring, ensuring maximum stability and
+                        longevity.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- coming soon dhanvantari -->
+    <section class="py-16 sm:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                    Dhanvantri Project: Work Progress & Updates
+                </h2>
+                <p class="mt-4 text-xl text-gray-600">
+                    Building the future with the highest standards of engineering and trust.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-12 items-start">
+
+                <div class="lg:col-span-2">
+                    <div class="bg-white border-t-4 border-indigo-600 rounded-xl shadow-2xl h-full">
+                        <div class="p-8 sm:p-10">
+                            <h3 class="text-3xl font-bold text-indigo-800 mb-6 flex items-center">
+                                <svg class="w-8 h-8 mr-3 text-indigo-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
+                                Current Construction Update
+                            </h3>
+
+                            <div class="mb-8">
+                                <p class="text-xl font-semibold text-gray-700 mb-3">Overall Completion: <span
+                                        class="text-indigo-600 font-extrabold text-2xl">50%</span></p>
+                                <div class="w-full bg-gray-200 rounded-full h-4">
+                                    <div class="bg-indigo-600 h-4 rounded-full transition-all duration-1000"
+                                        style="width: 50%"></div>
+                                </div>
+                            </div>
+
+                            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                                The Dhanvantri Project is on schedule. Structural work is fully complete, and we are now
+                                focused on the high-quality Finishing, Plumbing, and Electrical installations.
+                            </p>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <span class="text-green-500 mt-1 mr-2 flex-shrink-0">✔️</span>
+                                    <p class="text-base text-gray-800"><span class="font-semibold">Structural
+                                            Phase:</span> 100% complete. All foundation and framework successfully
+                                        passed stress tests.</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-yellow-600 mt-1 mr-2 flex-shrink-0">🛠️</span>
+                                    <p class="text-base text-gray-800"><span class="font-semibold">Finishing
+                                            Work:</span> 50% in progress, including tiling, wall plastering, and
+                                        external facade.</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <span class="text-blue-500 mt-1 mr-2 flex-shrink-0">💧</span>
+                                    <p class="text-base text-gray-800"><span class="font-semibold">MEP
+                                            Installation:</span> Electrical and Plumbing works are 60% complete,
+                                        focusing on energy efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="relative rounded-2xl overflow-hidden shadow-2xl transition duration-500 transform hover:scale-[1.02] h-full min-h-[350px]">
+                    <img class="w-full h-full object-cover" src="images/dhanamanatriprogress.jpg"
+                        alt="Dhanvantri Project Current Site View - December" loading="lazy">
+
+                    <div
+                        class="absolute bottom-0 left-0 bg-indigo-700/80 p-4 text-white font-bold text-lg rounded-tr-xl">
+                        December Site View
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-16 border-gray-200">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-teal-500 transition hover:shadow-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Quality Assurance Checks
+                    </h4>
+                    <p class="text-gray-600">
+                        All materials are ISO and ISI certified. We conduct weekly independent third-party audits to
+                        ensure strict adherence to engineering and safety standards.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-yellow-500 transition hover:shadow-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h8m-8 4h4m-4 4h4"></path>
+                        </svg>
+                        Next Milestones (Jan - Mar)
+                    </h4>
+                    <ul class="text-gray-600 list-disc pl-5 space-y-1">
+                        <li>Completion of External Facade.</li>
+                        <li>Installation of main elevator systems.</li>
+                        <li>Start of internal paintwork.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-600 transition hover:shadow-xl">
+                    <h4 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Target Completion
+                    </h4>
+                    <p class="text-gray-600">
+                        The project remains on track for final handover.
+                        <br>
+                        <span class="text-2xl font-bold text-green-700 mt-2 block">Q2 2027</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <section class="py-16 sm:py-24 bg-gray-900">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1510,8 +1957,8 @@
                                     <i class="fas fa-building"></i>
                                 </span>
                                 <span>
-                                    <span class="font-bold text-indigo-900 block text-2xl">Sun Livings – Block B &
-                                        C</span>
+                                    <span class="font-bold text-indigo-900 block text-2xl">Sun Livings – Block B - C & D
+                                    </span>
                                     <span class="text-lg text-gray-600 block mt-1 flex items-center">
                                         <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
                                         Nilanchal Nagar, 7th Lane, Brahmapur
@@ -1996,7 +2443,7 @@
                 <h2>Subscribe to Our Newsletter</h2>
                 <p>Stay updated with the latest luxury properties and real estate trends</p>
                 <form class="newsletter-form" id="newsletterForm">
-                    <input type="email" placeholder="Enter your email address" required>
+                    <input type="email" placeholder="Enter your email address" class="text-black" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
@@ -2307,6 +2754,74 @@
         }
 
 
+        // Universal inline video controls: attach to all <video> elements
+        (function () {
+            const videos = Array.from(document.querySelectorAll('video'));
+            videos.forEach((v, idx) => {
+                // Skip autoplay videos (e.g., About section swiper) so they remain muted and autoplay uninterrupted
+                if (v.autoplay) {
+                    try { v.muted = true; } catch (e) { }
+                    return;
+                }
+                // Ensure parent is positioned for absolute overlay
+                const parent = v.parentElement;
+                if (parent && getComputedStyle(parent).position === 'static') parent.style.position = 'relative';
+
+                // Try to find existing overlay button (by id patterns)
+                let overlay = parent ? parent.querySelector('[id$="-play-btn"], .inline-play-overlay') : null;
+
+                // If not found, create one
+                if (!overlay && parent) {
+                    overlay = document.createElement('button');
+                    overlay.className = 'inline-play-overlay absolute inset-0 m-auto w-24 h-24 rounded-full bg-black/50 text-white text-4xl flex items-center justify-center hover:bg-black/60 transition';
+                    overlay.style.zIndex = 10;
+                    overlay.innerText = '▶';
+                    parent.appendChild(overlay);
+                }
+
+                // Ensure overlay starts visible if video is paused/not started
+                if (overlay) overlay.style.display = v.paused ? 'flex' : 'none';
+
+                const togglePlay = () => {
+                    if (v.paused) {
+                        // Unmute only the feature inline videos
+                        if (v.id === 'sunliving-inline-video' || v.id === 'dhanvantri-inline-video') {
+                            try { v.muted = false; v.volume = 1.0; } catch (e) { }
+                        }
+                        v.play().catch(() => { });
+                    } else {
+                        v.pause();
+                    }
+                };
+
+                // Overlay click toggles play and visibility; ensure unmute for inline feature videos
+                if (overlay) overlay.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (v.paused) {
+                        if (v.id === 'sunliving-inline-video' || v.id === 'dhanvantri-inline-video') {
+                            try { v.muted = false; v.volume = 1.0; } catch (e) { }
+                        }
+                        v.play().catch(() => { });
+                        overlay.style.display = 'none';
+                    } else {
+                        v.pause();
+                        overlay.style.display = 'flex';
+                    }
+                });
+
+                // Clicking the video toggles play/pause
+                v.addEventListener('click', () => { togglePlay(); });
+
+                v.addEventListener('play', () => {
+                    if (v.id === 'sunliving-inline-video' || v.id === 'dhanvantri-inline-video') {
+                        try { v.muted = false; v.volume = 1.0; } catch (e) { }
+                    }
+                    if (overlay) overlay.style.display = 'none';
+                });
+                v.addEventListener('pause', () => { if (overlay) overlay.style.display = 'flex'; });
+                v.addEventListener('ended', () => { if (overlay) { overlay.innerText = '↻'; overlay.style.display = 'flex'; } v.currentTime = 0; });
+            });
+        })();
     </script>
 </body>
 
